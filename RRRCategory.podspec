@@ -2,7 +2,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "RRRCategory"
-  s.version      = "0.0.1"
+  s.version      = "0.1.0"
   s.summary      = "个人使用的Category"
 
   s.description  = <<-DESC
@@ -17,12 +17,36 @@ Pod::Spec.new do |s|
 
   s.source       = { :git => "https://github.com/RRRenJ/RRRCategory.git", :tag => s.version }
 
-  s.source_files  = "RRRCategory/*.{h,m}"
+  s.public_header_files = "RRRCategory/RRRCategory.h"
+
+  s.source_files  = "RRRCategory/RRRCategory.h"
 
   s.requires_arc = true
 
   s.frameworks   = 'UIKit', "Foundation"
 
   s.platform     = :ios, "8.0"
+
+
+  s.subspec 'UI' do |ss|
+
+  ss.source_files = 'RRRCategory/UI/*.{h,m}'
+
+  end
+
+  s.subspec 'NS' do |ss|
+
+  ss.source_files = 'RRRCategory/NS/*.{h,m}'
+
+  end
+
+
+
+
+
+
+
+
+
 
 end
