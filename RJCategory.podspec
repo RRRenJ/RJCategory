@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
 
   s.source       = { :git => "https://github.com/RRRenJ/RJCategory.git", :tag => s.version }
 
-  s.source_files  = "RJCategory/RJCategory/*.{h,m}"
+  s.source_files  = "RJCategory/*.{h,m}"
 
   s.requires_arc = true
 
