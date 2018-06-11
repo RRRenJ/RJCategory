@@ -28,14 +28,18 @@
         item = [[UIBarButtonItem alloc]initWithTitle:title style:UIBarButtonItemStyleDone target:self action:@selector(leftBarButtonTapped:)];
         [item setTitleTextAttributes:@{NSForegroundColorAttributeName:color,NSFontAttributeName:[UIFont systemFontOfSize:15.0f]} forState:UIControlStateNormal];
         [item setTitleTextAttributes:@{NSForegroundColorAttributeName:color,NSFontAttributeName:[UIFont systemFontOfSize:15.0f]} forState:UIControlStateHighlighted];
-        [item setTitleTextAttributes:@{NSForegroundColorAttributeName:color,NSFontAttributeName:[UIFont systemFontOfSize:15.0f]} forState:UIControlStateFocused];
+        if (@available(iOS 9.0, *)) {
+            [item setTitleTextAttributes:@{NSForegroundColorAttributeName:color,NSFontAttributeName:[UIFont systemFontOfSize:15.0f]} forState:UIControlStateFocused];
+        }
         self.leftBarButtonItem = item;
     }
     else{
         item = [[UIBarButtonItem alloc]initWithTitle:title style:UIBarButtonItemStyleDone target:self action:@selector(rightBarButtonTapped:)];
         [item setTitleTextAttributes:@{NSForegroundColorAttributeName:color,NSFontAttributeName:[UIFont systemFontOfSize:15.0f]} forState:UIControlStateNormal];
         [item setTitleTextAttributes:@{NSForegroundColorAttributeName:color,NSFontAttributeName:[UIFont systemFontOfSize:15.0f]} forState:UIControlStateHighlighted];
-        [item setTitleTextAttributes:@{NSForegroundColorAttributeName:color,NSFontAttributeName:[UIFont systemFontOfSize:15.0f]} forState:UIControlStateFocused];
+        if (@available(iOS 9.0, *)) {
+            [item setTitleTextAttributes:@{NSForegroundColorAttributeName:color,NSFontAttributeName:[UIFont systemFontOfSize:15.0f]} forState:UIControlStateFocused];
+        }
         self.rightBarButtonItem = item;
         
     }

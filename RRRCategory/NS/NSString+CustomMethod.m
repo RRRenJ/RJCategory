@@ -171,7 +171,7 @@
 - (NSInteger)fileSizeWithInteger
 {
     // 总大小
-    unsigned long long size = 0;
+    NSInteger size = 0;
     // 文件管理者
     NSFileManager *mgr = [NSFileManager defaultManager];
     
