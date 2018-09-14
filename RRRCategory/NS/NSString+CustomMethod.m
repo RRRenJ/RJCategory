@@ -98,6 +98,13 @@
     return [passwordTest evaluateWithObject:self];
 }
 
+
+-(BOOL)validateMoney{
+    NSString *phoneRegex = @"^[0-9]+(\\.[0-9]{0,2})?$";
+    NSPredicate *phoneTest = [NSPredicate predicateWithFormat:@"SELF MATCHES %@",phoneRegex];
+    return [phoneTest evaluateWithObject:self];
+}
+
 - (BOOL)isPureFloat{
     
     NSScanner* scan = [NSScanner scannerWithString:self];

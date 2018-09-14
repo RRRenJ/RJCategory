@@ -71,6 +71,14 @@
  */
 - (BOOL)isPureFloat;
 
+
+/**
+ 验证金额格式
+
+ @return 是否为金额格式  最多两位小数
+ */
+-(BOOL)validateMoney;
+
 /**
  计算文件大小
 
