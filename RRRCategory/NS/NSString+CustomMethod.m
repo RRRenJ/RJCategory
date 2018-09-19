@@ -105,6 +105,12 @@
     return [phoneTest evaluateWithObject:self];
 }
 
+- (BOOL)validateTextFieldMoney{
+    NSString *strRegex =  @"(\\+|\\-)?(([0]|(0[.]\\d{0,2}))|([1-9]\\d{0,9}(([.]\\d{0,2})?)))?";
+    NSPredicate *strTest = [NSPredicate predicateWithFormat:@"SELF MATCHES %@",strRegex];
+    return [strTest evaluateWithObject:self];
+}
+
 - (BOOL)isPureFloat{
     
     NSScanner* scan = [NSScanner scannerWithString:self];

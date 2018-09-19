@@ -73,11 +73,19 @@
 
 
 /**
- 验证金额格式
+ 验证字符串金额格式
 
  @return 是否为金额格式  最多两位小数
  */
 -(BOOL)validateMoney;
+
+
+/**
+ 验证输入框金额格式
+
+ @return 输入框text是否为金额格式，最多两位小数,整数最多10位金额,大于1元开头不能为零.
+ */
+- (BOOL)validateTextFieldMoney;
 
 /**
  计算文件大小
