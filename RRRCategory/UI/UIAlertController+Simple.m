@@ -11,8 +11,14 @@
 @implementation UIAlertController (Simple)
 
 
-+ (UIAlertController *)alertControllerWithTitle:(NSString *)title message:(NSString *)message preferredStyle:(UIAlertControllerStyle)style actions:(NSArray <NSDictionary <NSString *,NSNumber *>*>*)actions actionHandler:(void (^)(NSInteger))handler{
-    UIAlertController * alertController =  [UIAlertController alertControllerWithTitle:title message:message preferredStyle:style];
++ (UIAlertController *)alertControllerWithTitle:(NSString *)title message:(NSString *)message preferredStyle:(UIAlertControllerStyle)style actions:(NSArray <NSDictionary <NSString *,NSNumber *>*>*)actions actionHandler:(void (^)(NSInteger integer))handler{
+     UIAlertController * alertController;
+    if (title) {
+        alertController = [UIAlertController alertControllerWithTitle:title message:message preferredStyle:style];
+    }else{
+        alertController =  [[UIAlertController alloc]init];
+    }
+
     for (int index = 0; index < actions.count ; index ++) {
         NSNumber * number = actions[index].allValues.firstObject;
         UIAlertActionStyle style = number.integerValue;

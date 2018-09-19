@@ -10,6 +10,6 @@
 
 @interface UIAlertController (Simple)
 
-+ (UIAlertController *)alertControllerWithTitle:(NSString *)title message:(NSString *)message preferredStyle:(UIAlertControllerStyle)style actions:(NSArray <NSDictionary <NSString *,NSNumber *>*>*)actions actionHandler:(void (^)(NSInteger))handler;
++ (UIAlertController *)alertControllerWithTitle:(NSString *)title message:(NSString *)message preferredStyle:(UIAlertControllerStyle)style actions:(NSArray <NSDictionary <NSString *,NSNumber *>*>*)actions actionHandler:(void (^)(NSInteger integer))handler;
 
 @end
