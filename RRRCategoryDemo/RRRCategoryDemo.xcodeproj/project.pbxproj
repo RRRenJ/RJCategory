@@ -160,12 +160,12 @@
 			isa = PBXGroup;
 			children = (
 				B715A40220CE7E0C003018EF /* NSFileManager+Helper.m */,
-				B715A40320CE7E0C003018EF /* NSDate+CustomMethod.h */,
 				B715A40420CE7E0C003018EF /* NSObject+Json.m */,
 				B715A40520CE7E0C003018EF /* NSBundle+AppLanguageSwitch.h */,
 				B715A40620CE7E0C003018EF /* NSString+CustomMethod.h */,
 				B715A40A20CE7E0C003018EF /* NSString+CustomMethod.m */,
 				B715A40720CE7E0C003018EF /* NSFileManager+Helper.h */,
+				B715A40320CE7E0C003018EF /* NSDate+CustomMethod.h */,
 				B715A40820CE7E0C003018EF /* NSDate+CustomMethod.m */,
 				B715A40920CE7E0C003018EF /* NSObject+Json.h */,
 				B715A40B20CE7E0C003018EF /* NSBundle+AppLanguageSwitch.m */,

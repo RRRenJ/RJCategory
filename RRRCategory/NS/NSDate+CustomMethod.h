@@ -38,4 +38,32 @@
 //和当前时间比较返回对应格式
 + (NSString*)compareTime:(NSString *)time;
 
+
+// 返回Date年
+- (NSInteger)year;
+
+// 返回Date月
+- (NSInteger)month;
+
+// 返回Date天
+- (NSInteger)day;
+
+// 返回Date周
+- (NSInteger)weekday;
+
+
+- (BOOL)isToday;
+
+// 当前月有多少天
+- (NSUInteger)numberOfDaysInMonth;
+
+
+- (NSString *)stringWithFormat:(NSString *)format;
+
+
+- (NSDate *)dateByAddingMonths:(NSInteger)months;
+
+
++ (NSDate *)dateWithString:(NSString *)dateString format:(NSString *)format;
+
 @end
