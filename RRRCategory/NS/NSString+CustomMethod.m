@@ -213,4 +213,20 @@
 }
 
 
+- (float)getHeightByWidth:(float)width font:(UIFont*)font{
+    NSStringDrawingOptions  options = NSStringDrawingUsesFontLeading | NSStringDrawingUsesLineFragmentOrigin;
+    
+    CGRect rect = [self boundingRectWithSize:CGSizeMake(width, MAXFLOAT) options:options attributes:@{NSFontAttributeName:font} context:nil];
+    
+    return ceilf(rect.size.height);
+}
+
+- (float)getWidthByHeight:(float)height font:(UIFont*)font{
+    NSStringDrawingOptions  options = NSStringDrawingUsesFontLeading | NSStringDrawingUsesLineFragmentOrigin;
+    
+    CGRect rect = [self boundingRectWithSize:CGSizeMake(MAXFLOAT, height) options:options attributes:@{NSFontAttributeName:font} context:nil];
+    
+    return ceilf(rect.size.width);
+}
+
 @end

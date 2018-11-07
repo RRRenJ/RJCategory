@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 @interface NSString (CustomMethod)
 
@@ -100,5 +101,22 @@
  @return 字节
  */
 - (NSInteger)fileSizeWithInteger;
+
+/**
+ 计算文字高度
+
+ @param width 给定宽
+ @param font 字体
+ @return 高度
+ */
+- (float)getHeightByWidth:(float)width font:(UIFont*)font;
+/**
+ 计算文字宽度
+ 
+ @param height 给定高
+ @param font 字体
+ @return 高度
+ */
+- (float)getWidthByHeight:(float)height font:(UIFont*)font;
 
 @end
