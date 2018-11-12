@@ -10,6 +10,7 @@
 
 @interface UIImage (CustomStyle)
 
+
 /**
  图片切圆
  */
@@ -26,5 +27,9 @@
 + (UIImage *)getScreenShotImageFromVideoURL:(NSString *)fileurl;
 //根据url获取图片尺寸
 + (CGSize)getImageSizeWithURL:(id)URL;
+
+
+//给图片换颜色
+-(UIImage*)imageChangeColor:(UIColor*)color;
 
 @end

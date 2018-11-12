@@ -66,4 +66,7 @@
 
 + (NSDate *)dateWithString:(NSString *)dateString format:(NSString *)format;
 
+//获取时间戳 毫秒级
++ (NSString *)getTimestamp:(NSDate *)date;
+
 @end

@@ -28,6 +28,7 @@
 		B715A41920CE7E0C003018EF /* NSDate+CustomMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = B715A40820CE7E0C003018EF /* NSDate+CustomMethod.m */; };
 		B715A41A20CE7E0C003018EF /* NSString+CustomMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = B715A40A20CE7E0C003018EF /* NSString+CustomMethod.m */; };
 		B715A41B20CE7E0C003018EF /* NSBundle+AppLanguageSwitch.m in Sources */ = {isa = PBXBuildFile; fileRef = B715A40B20CE7E0C003018EF /* NSBundle+AppLanguageSwitch.m */; };
+		B7D734C121992ACD0094AC93 /* UIColor+GradientColor.m in Sources */ = {isa = PBXBuildFile; fileRef = B7D734C021992ACD0094AC93 /* UIColor+GradientColor.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -72,6 +73,8 @@
 		B715A40A20CE7E0C003018EF /* NSString+CustomMethod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+CustomMethod.m"; sourceTree = "<group>"; };
 		B715A40B20CE7E0C003018EF /* NSBundle+AppLanguageSwitch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+AppLanguageSwitch.m"; sourceTree = "<group>"; };
 		B715A40C20CE7E0C003018EF /* RRRCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RRRCategory.h; sourceTree = "<group>"; };
+		B7D734BF21992ACC0094AC93 /* UIColor+GradientColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+GradientColor.h"; sourceTree = "<group>"; };
+		B7D734C021992ACD0094AC93 /* UIColor+GradientColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+GradientColor.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +135,8 @@
 		B715A3EC20CE7E0C003018EF /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				B7D734BF21992ACC0094AC93 /* UIColor+GradientColor.h */,
+				B7D734C021992ACD0094AC93 /* UIColor+GradientColor.m */,
 				B715A3ED20CE7E0C003018EF /* UIView+cutRound.m */,
 				B715A3EE20CE7E0C003018EF /* UINavigationController+CustomStyle.m */,
 				B715A3EF20CE7E0C003018EF /* UIAlertController+Simple.h */,
@@ -247,6 +252,7 @@
 				B715A41320CE7E0C003018EF /* UINavigationItem+CustomStyle.m in Sources */,
 				B715A41620CE7E0C003018EF /* UILabel+LabelSize.m in Sources */,
 				B715A41020CE7E0C003018EF /* UIViewController+BackButtonHandler.m in Sources */,
+				B7D734C121992ACD0094AC93 /* UIColor+GradientColor.m in Sources */,
 				B715A41720CE7E0C003018EF /* NSFileManager+Helper.m in Sources */,
 				B715A40D20CE7E0C003018EF /* UIView+cutRound.m in Sources */,
 				B715A41920CE7E0C003018EF /* NSDate+CustomMethod.m in Sources */,
