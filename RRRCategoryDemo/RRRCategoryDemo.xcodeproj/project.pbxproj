@@ -28,6 +28,7 @@
 		B715A41920CE7E0C003018EF /* NSDate+CustomMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = B715A40820CE7E0C003018EF /* NSDate+CustomMethod.m */; };
 		B715A41A20CE7E0C003018EF /* NSString+CustomMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = B715A40A20CE7E0C003018EF /* NSString+CustomMethod.m */; };
 		B715A41B20CE7E0C003018EF /* NSBundle+AppLanguageSwitch.m in Sources */ = {isa = PBXBuildFile; fileRef = B715A40B20CE7E0C003018EF /* NSBundle+AppLanguageSwitch.m */; };
+		B78BB80421ABC3D400BE92C4 /* UITableView+CustomStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = B78BB80321ABC3D400BE92C4 /* UITableView+CustomStyle.m */; };
 		B7D734C121992ACD0094AC93 /* UIColor+GradientColor.m in Sources */ = {isa = PBXBuildFile; fileRef = B7D734C021992ACD0094AC93 /* UIColor+GradientColor.m */; };
 /* End PBXBuildFile section */
 
@@ -73,6 +74,8 @@
 		B715A40A20CE7E0C003018EF /* NSString+CustomMethod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+CustomMethod.m"; sourceTree = "<group>"; };
 		B715A40B20CE7E0C003018EF /* NSBundle+AppLanguageSwitch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+AppLanguageSwitch.m"; sourceTree = "<group>"; };
 		B715A40C20CE7E0C003018EF /* RRRCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RRRCategory.h; sourceTree = "<group>"; };
+		B78BB80221ABC3D400BE92C4 /* UITableView+CustomStyle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITableView+CustomStyle.h"; sourceTree = "<group>"; };
+		B78BB80321ABC3D400BE92C4 /* UITableView+CustomStyle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITableView+CustomStyle.m"; sourceTree = "<group>"; };
 		B7D734BF21992ACC0094AC93 /* UIColor+GradientColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+GradientColor.h"; sourceTree = "<group>"; };
 		B7D734C021992ACD0094AC93 /* UIColor+GradientColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+GradientColor.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -157,6 +160,8 @@
 				B715A3FE20CE7E0C003018EF /* UILabel+LabelSize.m */,
 				B715A3FF20CE7E0C003018EF /* UIImage+CustomStyle.h */,
 				B715A40020CE7E0C003018EF /* UIViewController+BackButtonHandler.h */,
+				B78BB80221ABC3D400BE92C4 /* UITableView+CustomStyle.h */,
+				B78BB80321ABC3D400BE92C4 /* UITableView+CustomStyle.m */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -248,6 +253,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B78BB80421ABC3D400BE92C4 /* UITableView+CustomStyle.m in Sources */,
 				B715A41120CE7E0C003018EF /* UIImage+CustomStyle.m in Sources */,
 				B715A41320CE7E0C003018EF /* UINavigationItem+CustomStyle.m in Sources */,
 				B715A41620CE7E0C003018EF /* UILabel+LabelSize.m in Sources */,
