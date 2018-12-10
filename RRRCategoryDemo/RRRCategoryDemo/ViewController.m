@@ -10,6 +10,7 @@
 #import "RRRCategory.h"
 //#import "UINavigationController+CustomStyle.h"
 //#import "UIView+cutRound.h"
+#import "NSObject+Json.h"
 
 @interface ViewController ()
 
@@ -21,6 +22,9 @@
     [super viewDidLoad];
     [self customUI];
     self.view.backgroundColor = [UIColor whiteColor];
+    NSDictionary * dict = @{@"xxxx":@"455",@"1xxxx":@"455",@"3xxxx":@"455"};
+    NSLog(@"%@",[dict toJSON]);
+    
 }
 
 

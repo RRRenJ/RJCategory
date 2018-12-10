@@ -16,7 +16,7 @@
     if ([self  isKindOfClass:[NSDictionary class]]) {
         NSError *error = nil;
         NSData *jsonData = [NSJSONSerialization dataWithJSONObject:self
-                                                           options:NSJSONWritingPrettyPrinted
+                                                           options:0
                                                              error:&error];
         if ([jsonData length] > 0 && error == nil){
             return [[NSString alloc] initWithData:jsonData
