@@ -29,6 +29,7 @@
 		B715A41A20CE7E0C003018EF /* NSString+CustomMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = B715A40A20CE7E0C003018EF /* NSString+CustomMethod.m */; };
 		B715A41B20CE7E0C003018EF /* NSBundle+AppLanguageSwitch.m in Sources */ = {isa = PBXBuildFile; fileRef = B715A40B20CE7E0C003018EF /* NSBundle+AppLanguageSwitch.m */; };
 		B78BB80421ABC3D400BE92C4 /* UITableView+CustomStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = B78BB80321ABC3D400BE92C4 /* UITableView+CustomStyle.m */; };
+		B79D607D21C243EE00C0C538 /* UIButton+Action.m in Sources */ = {isa = PBXBuildFile; fileRef = B79D607C21C243EE00C0C538 /* UIButton+Action.m */; };
 		B7D734C121992ACD0094AC93 /* UIColor+GradientColor.m in Sources */ = {isa = PBXBuildFile; fileRef = B7D734C021992ACD0094AC93 /* UIColor+GradientColor.m */; };
 /* End PBXBuildFile section */
 
@@ -76,6 +77,8 @@
 		B715A40C20CE7E0C003018EF /* RRRCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RRRCategory.h; sourceTree = "<group>"; };
 		B78BB80221ABC3D400BE92C4 /* UITableView+CustomStyle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITableView+CustomStyle.h"; sourceTree = "<group>"; };
 		B78BB80321ABC3D400BE92C4 /* UITableView+CustomStyle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITableView+CustomStyle.m"; sourceTree = "<group>"; };
+		B79D607B21C243EE00C0C538 /* UIButton+Action.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+Action.h"; sourceTree = "<group>"; };
+		B79D607C21C243EE00C0C538 /* UIButton+Action.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Action.m"; sourceTree = "<group>"; };
 		B7D734BF21992ACC0094AC93 /* UIColor+GradientColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+GradientColor.h"; sourceTree = "<group>"; };
 		B7D734C021992ACD0094AC93 /* UIColor+GradientColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+GradientColor.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -144,7 +147,6 @@
 				B715A3EE20CE7E0C003018EF /* UINavigationController+CustomStyle.m */,
 				B715A3EF20CE7E0C003018EF /* UIAlertController+Simple.h */,
 				B715A3F020CE7E0C003018EF /* UIColor+Hex.m */,
-				B715A3F120CE7E0C003018EF /* UIButton+ImageAndText.h */,
 				B715A3F220CE7E0C003018EF /* UISearchBar+SearchBarPlaceholder.h */,
 				B715A3F320CE7E0C003018EF /* UINavigationItem+CustomStyle.h */,
 				B715A3F420CE7E0C003018EF /* UIViewController+BackButtonHandler.m */,
@@ -156,12 +158,15 @@
 				B715A3FA20CE7E0C003018EF /* UIAlertController+Simple.m */,
 				B715A3FB20CE7E0C003018EF /* UINavigationItem+CustomStyle.m */,
 				B715A3FC20CE7E0C003018EF /* UISearchBar+SearchBarPlaceholder.m */,
+				B715A3F120CE7E0C003018EF /* UIButton+ImageAndText.h */,
 				B715A3FD20CE7E0C003018EF /* UIButton+ImageAndText.m */,
 				B715A3FE20CE7E0C003018EF /* UILabel+LabelSize.m */,
 				B715A3FF20CE7E0C003018EF /* UIImage+CustomStyle.h */,
 				B715A40020CE7E0C003018EF /* UIViewController+BackButtonHandler.h */,
 				B78BB80221ABC3D400BE92C4 /* UITableView+CustomStyle.h */,
 				B78BB80321ABC3D400BE92C4 /* UITableView+CustomStyle.m */,
+				B79D607B21C243EE00C0C538 /* UIButton+Action.h */,
+				B79D607C21C243EE00C0C538 /* UIButton+Action.m */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -260,6 +265,7 @@
 				B715A41020CE7E0C003018EF /* UIViewController+BackButtonHandler.m in Sources */,
 				B7D734C121992ACD0094AC93 /* UIColor+GradientColor.m in Sources */,
 				B715A41720CE7E0C003018EF /* NSFileManager+Helper.m in Sources */,
+				B79D607D21C243EE00C0C538 /* UIButton+Action.m in Sources */,
 				B715A40D20CE7E0C003018EF /* UIView+cutRound.m in Sources */,
 				B715A41920CE7E0C003018EF /* NSDate+CustomMethod.m in Sources */,
 				B715A41420CE7E0C003018EF /* UISearchBar+SearchBarPlaceholder.m in Sources */,

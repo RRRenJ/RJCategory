@@ -12,6 +12,7 @@
 //#import "UIView+cutRound.h"
 #import "NSObject+Json.h"
 
+
 @interface ViewController ()
 
 @end
@@ -20,10 +21,22 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self customUI];
+//    [self customUI];
     self.view.backgroundColor = [UIColor whiteColor];
     NSDictionary * dict = @{@"xxxx":@"455",@"1xxxx":@"455",@"3xxxx":@"455"};
     NSLog(@"%@",[dict toJSON]);
+    
+    
+    UIButton * bt = [UIButton buttonWithType:UIButtonTypeCustom];
+    bt.frame = CGRectMake(100, 100,50, 60);
+
+    [self.view addSubview:bt];
+    
+    bt.backgroundColor = [UIColor blackColor];
+    
+    [bt addTarget:self action:@selector(xxxxx) forControlEvents:UIControlEventTouchUpInside];
+    
+
     
 }
 
@@ -31,6 +44,10 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)xxxxx{
+    [self loadData];
 }
 
 - (void)customUI{
