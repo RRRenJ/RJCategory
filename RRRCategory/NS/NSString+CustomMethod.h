@@ -40,6 +40,23 @@
 - (NSString *)nullConvertIntoNothing;
 
 #pragma - mark - ValidateFormat
+
+/**
+ 正则验证
+
+ @param regex 正则字符串
+ @return YES or NO
+ */
+- (BOOL)isValidateByRegex:(NSString *)regex;
+
+
+/**
+ 验证邮箱地址
+
+ @return YES or NO
+ */
+- (BOOL)isValidateEmail;
+
 /**
  验证中国区电话号码格式
 

@@ -73,42 +73,46 @@
     return self;
 }
 
+- (BOOL)isValidateByRegex:(NSString *)regex{
+    NSPredicate *pre = [NSPredicate predicateWithFormat:@"SELF MATCHES %@",regex];
+    return [pre evaluateWithObject:self];
+}
+
+- (BOOL)isValidateEmail{
+    NSString *emailRegex = @"[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,4}";
+    return [self isValidateByRegex:emailRegex];
+}
+
 
 - (BOOL)isValidatePhoneNumber{
     NSString *phoneNumberRegex = @"^1[345789]\\d{9}$";
-    NSPredicate *phoneNumberTest = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", phoneNumberRegex];
-    return [phoneNumberTest evaluateWithObject:self];
+    return  [self isValidateByRegex:phoneNumberRegex];
 }
 
 - (BOOL)isValidatePassword{
     NSString *passwordRegex = @"^[0-9a-zA-Z~@#$%^&*()]{6,16}$";
-    NSPredicate *passwordTest = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", passwordRegex];
-    return [passwordTest evaluateWithObject:self];
+    return  [self isValidateByRegex:passwordRegex];
 }
 
 - (BOOL)isValidateJustLongPassword{
     NSString *passwordRegex = @"^.{6,16}$";
-    NSPredicate *passwordTest = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", passwordRegex];
-    return [passwordTest evaluateWithObject:self];
+    return  [self isValidateByRegex:passwordRegex];
 }
 
 - (BOOL)isValidateJustInteger{
     NSString *passwordRegex = @"^[0-9]*$";
-    NSPredicate *passwordTest = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", passwordRegex];
-    return [passwordTest evaluateWithObject:self];
+    return  [self isValidateByRegex:passwordRegex];
 }
 
 
 -(BOOL)validateMoney{
     NSString *phoneRegex = @"^[0-9]+(\\.[0-9]{0,2})?$";
-    NSPredicate *phoneTest = [NSPredicate predicateWithFormat:@"SELF MATCHES %@",phoneRegex];
-    return [phoneTest evaluateWithObject:self];
+    return  [self isValidateByRegex:phoneRegex];
 }
 
 - (BOOL)validateTextFieldMoney{
     NSString *strRegex =  @"(\\+|\\-)?(([0]|(0[.]\\d{0,2}))|([1-9]\\d{0,9}(([.]\\d{0,2})?)))?";
-    NSPredicate *strTest = [NSPredicate predicateWithFormat:@"SELF MATCHES %@",strRegex];
-    return [strTest evaluateWithObject:self];
+    return  [self isValidateByRegex:strRegex];
 }
 
 - (BOOL)isPureFloat{
