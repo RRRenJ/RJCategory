@@ -73,6 +73,22 @@
     return self;
 }
 
+#pragma - mark - Splice String
+
++ (NSString *)splice:(NSArray<NSString *> *)strs{
+    if (strs.count == 0) {
+        return @"";
+    }else{
+        NSMutableString * full = [[NSMutableString alloc]init];
+        for (int index = 0; index < strs.count; index ++) {
+            NSString * str = strs[index];
+            [full appendString:str];
+        }
+        return full.copy;
+    }
+}
+
+
 - (BOOL)isValidateByRegex:(NSString *)regex{
     NSPredicate *pre = [NSPredicate predicateWithFormat:@"SELF MATCHES %@",regex];
     return [pre evaluateWithObject:self];

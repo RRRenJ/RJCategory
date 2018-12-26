@@ -39,6 +39,11 @@
  */
 - (NSString *)nullConvertIntoNothing;
 
+#pragma - mark - Splice String
+
++ (NSString *)splice:(NSArray <NSString *> *)strs;
+
+
 #pragma - mark - ValidateFormat
 
 /**

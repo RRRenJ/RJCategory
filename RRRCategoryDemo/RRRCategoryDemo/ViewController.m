@@ -11,7 +11,7 @@
 //#import "UINavigationController+CustomStyle.h"
 //#import "UIView+cutRound.h"
 #import "NSObject+Json.h"
-
+#import "NSString+CustomMethod.h"
 
 @interface ViewController ()
 
@@ -35,9 +35,7 @@
     bt.backgroundColor = [UIColor blackColor];
     
     [bt addTarget:self action:@selector(xxxxx) forControlEvents:UIControlEventTouchUpInside];
-    
-
-    
+  
 }
 
 
