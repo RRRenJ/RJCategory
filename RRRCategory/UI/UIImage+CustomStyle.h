@@ -23,6 +23,8 @@
  修正照片方向 垂直方向
  */
 - (UIImage *)fixOrientation;
+//旋转图片
+- (UIImage*)rotate:(UIImageOrientation)orient;
 //获取视频第一帧图片
 + (UIImage *)getScreenShotImageFromVideoURL:(NSString *)fileurl;
 //根据url获取图片尺寸
