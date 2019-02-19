@@ -13,7 +13,10 @@
 #import "NSObject+Json.h"
 #import "NSString+CustomMethod.h"
 
+#import "UITableView+CustomStyle.h"
+
 @interface ViewController ()
+
 
 @end
 
@@ -36,6 +39,7 @@
     
     [bt addTarget:self action:@selector(xxxxx) forControlEvents:UIControlEventTouchUpInside];
   
+    [self.tableView setHeaderViewBankgroundGradientfromColor:[UIColor greenColor] toColor:[UIColor blueColor]];
 }
 
 
@@ -45,7 +49,7 @@
 }
 
 - (void)xxxxx{
-    [self loadData];
+//    [self loadData];
 }
 
 - (void)customUI{

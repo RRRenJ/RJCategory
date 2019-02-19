@@ -14,6 +14,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)setHeaderViewBankgroundColor:(UIColor *)color;
 
+- (void)setHeaderViewBankgroundGradientfromColor:(UIColor *)fromColor toColor:(UIColor *)toColor;
+
 @end
 
 NS_ASSUME_NONNULL_END
