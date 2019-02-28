@@ -31,11 +31,25 @@
     
     
     UIButton * bt = [UIButton buttonWithType:UIButtonTypeCustom];
-    bt.frame = CGRectMake(100, 100,50, 60);
+    bt.frame = CGRectMake(100, 100,100, 50);
+//    [bt cutRoundWithRadius:30];
+    [bt cutRoundWithRadius:40 byRoundingCorners:UIRectCornerAllCorners];
 
     [self.view addSubview:bt];
     
     bt.backgroundColor = [UIColor blackColor];
+    
+    UIButton * bt1 = [UIButton buttonWithType:UIButtonTypeCustom];
+    bt1.frame = CGRectMake(100, 200,100, 50);
+
+    bt1.layer.cornerRadius = 30;
+    bt.layer.masksToBounds = YES;
+    
+    [self.view addSubview:bt1];
+    
+    bt1.backgroundColor = [UIColor blackColor];
+    
+    
     
     [bt addTarget:self action:@selector(xxxxx) forControlEvents:UIControlEventTouchUpInside];
   

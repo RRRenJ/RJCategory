@@ -14,15 +14,17 @@
  4角切圆
 
  @param radius 圆角半径
+ @param isAuto 是否是AutoLayout布局
  */
-- (void)cutRoundWithRadius:(CGFloat)radius;
+- (void)cutRoundWithRadius:(CGFloat)radius isAutoLayout:(BOOL)isAuto;
 
 /**
  切圆
 
  @param radius 圆角半径
  @param corners 圆角位置
+  @param isAuto 是否是AutoLayout布局
  */
-- (void)cutRoundWithRadius:(CGFloat)radius byRoundingCorners:(UIRectCorner)corners;
+- (void)cutRoundWithRadius:(CGFloat)radius byRoundingCorners:(UIRectCorner)corners isAutoLayout:(BOOL)isAuto;
 
 @end
