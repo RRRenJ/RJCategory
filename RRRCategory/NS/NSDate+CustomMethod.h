@@ -68,5 +68,7 @@
 
 //获取时间戳 毫秒级
 + (NSString *)getTimestamp:(NSDate *)date;
+//毫秒级 
++ (NSDate *)timestampToDate:(long long)times;
 
 @end

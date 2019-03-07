@@ -115,4 +115,13 @@
 }
 
 
++ (NSDate *)timestampToDate:(long long)times{
+
+    NSTimeInterval interval    = times / 1000.0;
+    NSDate *date               = [NSDate dateWithTimeIntervalSince1970:interval];
+    
+    return  date;
+}
+
+
 @end
