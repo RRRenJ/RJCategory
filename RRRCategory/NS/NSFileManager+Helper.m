@@ -7,6 +7,8 @@
 //
 
 #import "NSFileManager+Helper.h"
+#include <sys/param.h>
+#include <sys/mount.h>
 
 @implementation NSFileManager(Helper)
 + (BOOL)fileExist:(NSString *)path
@@ -100,4 +102,15 @@
     }
     return [UIImage imageWithContentsOfFile:filePath];
 }
+
++ (NSString *)freeDiskSpaceInBytes{
+    struct statfs buf;
+    unsigned long long freeSpace = -1;
+    if (statfs("/var", &buf) >= 0) {
+        freeSpace = (unsigned long long)(buf.f_bsize * buf.f_bavail);
+    }
+    NSString *str = [NSString stringWithFormat:@"%0.2lld",freeSpace/1024/1024];
+    return str;
+}
+
 @end

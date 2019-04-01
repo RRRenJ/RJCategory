@@ -78,7 +78,12 @@
  */
 + (UIImage *)getImageFileName:(NSString *)filePath;
 
-
+/**
+ 获取设备剩余存储空间
+ 
+ @return 剩余存储空间（MB）
+ */
++ (NSString *)freeDiskSpaceInBytes;
 
 
 @end
