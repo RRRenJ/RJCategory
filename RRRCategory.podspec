@@ -2,7 +2,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "RRRCategory"
-  s.version      = "0.3.0"
+  s.version      = "0.3.1"
   s.summary      = "个人使用的Category"
 
   s.description  = <<-DESC

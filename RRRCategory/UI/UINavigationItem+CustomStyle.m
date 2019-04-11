@@ -17,7 +17,7 @@
         items = [[UIBarButtonItem alloc]initWithImage:[[UIImage imageNamed:imgName] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] style:UIBarButtonItemStylePlain target:self action:@selector(leftBarButtonTapped:)];
         self.leftBarButtonItem = items;
     }else{
-        items = [[UIBarButtonItem alloc]initWithImage:[[UIImage imageNamed:imgName] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] style:UIBarButtonItemStylePlain target:self action:@selector(leftBarButtonTapped:)];
+        items = [[UIBarButtonItem alloc]initWithImage:[[UIImage imageNamed:imgName] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] style:UIBarButtonItemStylePlain target:self action:@selector(rightBarButtonTapped:)];
         self.rightBarButtonItem = items;
     }
 }
