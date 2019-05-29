@@ -74,7 +74,7 @@
     UIView * view = [[UIView alloc]initWithFrame:CGRectMake(100, 100, 200, 100)];
     [self.view addSubview:view];
     view.backgroundColor = [UIColor blackColor];
-    [view cutRoundWithRadius:10 byRoundingCorners:UIRectCornerTopLeft | UIRectCornerBottomRight];
+//    [view cutRoundWithRadius:10 byRoundingCorners:UIRectCornerTopLeft | UIRectCornerBottomRight];
     
     
 }
