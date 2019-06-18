@@ -13,14 +13,17 @@
 
 // 将字典转化为JSON串
 - (NSString *)toJSON{
-    if ([self  isKindOfClass:[NSDictionary class]]) {
+    if ([self  isKindOfClass:[NSDictionary class]] || [self  isKindOfClass:[NSArray class]]) {
         NSError *error = nil;
         NSData *jsonData = [NSJSONSerialization dataWithJSONObject:self
-                                                           options:0
+                                                           options:NSJSONWritingPrettyPrinted
                                                              error:&error];
         if ([jsonData length] > 0 && error == nil){
-            return [[NSString alloc] initWithData:jsonData
-                                         encoding:NSUTF8StringEncoding];;
+            NSString * jsonStr = [[NSString alloc] initWithData:jsonData
+                                                       encoding:NSUTF8StringEncoding];
+            jsonStr = [jsonStr stringByReplacingOccurrencesOfString:@" " withString:@""];
+            jsonStr = [jsonStr stringByReplacingOccurrencesOfString:@"\n" withString:@""];
+            return jsonStr;
         }else{
             return nil;
         }

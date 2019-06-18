@@ -28,12 +28,13 @@
     self.view.backgroundColor = [UIColor whiteColor];
     NSDictionary * dict = @{@"xxxx":@"455",@"1xxxx":@"455",@"3xxxx":@"455"};
     NSLog(@"%@",[dict toJSON]);
-    
+    NSArray * array = @[@"111",@"xxxx",@"67675"];
+     NSLog(@"array = %@",[array toJSON]);
     
     UIButton * bt = [UIButton buttonWithType:UIButtonTypeCustom];
     bt.frame = CGRectMake(100, 100,100, 50);
 //    [bt cutRoundWithRadius:30];
-    [bt cutRoundWithRadius:40 byRoundingCorners:UIRectCornerAllCorners];
+//    [bt cutRoundWithRadius:40 byRoundingCorners:UIRectCornerAllCorners];
 
     [self.view addSubview:bt];
     
