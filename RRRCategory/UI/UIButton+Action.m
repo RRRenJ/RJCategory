@@ -8,6 +8,7 @@
 
 #import "UIButton+Action.h"
 #import <objc/runtime.h>
+
 static const void * ActionCallBackKey = &ActionCallBackKey;
 
 @implementation UIButton (Action)
@@ -24,7 +25,6 @@ static const void * ActionCallBackKey = &ActionCallBackKey;
 - (void)actionBtClicked:(UIButton *)sender{
     self.callBack(sender);
 }
-
 
 - (ActionCallBack)callBack{
     return objc_getAssociatedObject(self, ActionCallBackKey);

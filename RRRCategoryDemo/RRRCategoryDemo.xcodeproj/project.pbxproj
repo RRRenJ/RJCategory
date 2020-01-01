@@ -27,7 +27,6 @@
 		B715A41820CE7E0C003018EF /* NSObject+Json.m in Sources */ = {isa = PBXBuildFile; fileRef = B715A40420CE7E0C003018EF /* NSObject+Json.m */; };
 		B715A41920CE7E0C003018EF /* NSDate+CustomMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = B715A40820CE7E0C003018EF /* NSDate+CustomMethod.m */; };
 		B715A41A20CE7E0C003018EF /* NSString+CustomMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = B715A40A20CE7E0C003018EF /* NSString+CustomMethod.m */; };
-		B715A41B20CE7E0C003018EF /* NSBundle+AppLanguageSwitch.m in Sources */ = {isa = PBXBuildFile; fileRef = B715A40B20CE7E0C003018EF /* NSBundle+AppLanguageSwitch.m */; };
 		B78BB80421ABC3D400BE92C4 /* UITableView+CustomStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = B78BB80321ABC3D400BE92C4 /* UITableView+CustomStyle.m */; };
 		B79D607D21C243EE00C0C538 /* UIButton+Action.m in Sources */ = {isa = PBXBuildFile; fileRef = B79D607C21C243EE00C0C538 /* UIButton+Action.m */; };
 		B7D734C121992ACD0094AC93 /* UIColor+GradientColor.m in Sources */ = {isa = PBXBuildFile; fileRef = B7D734C021992ACD0094AC93 /* UIColor+GradientColor.m */; };
@@ -67,13 +66,11 @@
 		B715A40220CE7E0C003018EF /* NSFileManager+Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSFileManager+Helper.m"; sourceTree = "<group>"; };
 		B715A40320CE7E0C003018EF /* NSDate+CustomMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+CustomMethod.h"; sourceTree = "<group>"; };
 		B715A40420CE7E0C003018EF /* NSObject+Json.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Json.m"; sourceTree = "<group>"; };
-		B715A40520CE7E0C003018EF /* NSBundle+AppLanguageSwitch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+AppLanguageSwitch.h"; sourceTree = "<group>"; };
 		B715A40620CE7E0C003018EF /* NSString+CustomMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+CustomMethod.h"; sourceTree = "<group>"; };
 		B715A40720CE7E0C003018EF /* NSFileManager+Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSFileManager+Helper.h"; sourceTree = "<group>"; };
 		B715A40820CE7E0C003018EF /* NSDate+CustomMethod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+CustomMethod.m"; sourceTree = "<group>"; };
 		B715A40920CE7E0C003018EF /* NSObject+Json.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Json.h"; sourceTree = "<group>"; };
 		B715A40A20CE7E0C003018EF /* NSString+CustomMethod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+CustomMethod.m"; sourceTree = "<group>"; };
-		B715A40B20CE7E0C003018EF /* NSBundle+AppLanguageSwitch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+AppLanguageSwitch.m"; sourceTree = "<group>"; };
 		B715A40C20CE7E0C003018EF /* RRRCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RRRCategory.h; sourceTree = "<group>"; };
 		B78BB80221ABC3D400BE92C4 /* UITableView+CustomStyle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITableView+CustomStyle.h"; sourceTree = "<group>"; };
 		B78BB80321ABC3D400BE92C4 /* UITableView+CustomStyle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITableView+CustomStyle.m"; sourceTree = "<group>"; };
@@ -174,8 +171,6 @@
 		B715A40120CE7E0C003018EF /* NS */ = {
 			isa = PBXGroup;
 			children = (
-				B715A40520CE7E0C003018EF /* NSBundle+AppLanguageSwitch.h */,
-				B715A40B20CE7E0C003018EF /* NSBundle+AppLanguageSwitch.m */,
 				B715A40320CE7E0C003018EF /* NSDate+CustomMethod.h */,
 				B715A40820CE7E0C003018EF /* NSDate+CustomMethod.m */,
 				B715A40720CE7E0C003018EF /* NSFileManager+Helper.h */,
@@ -273,7 +268,6 @@
 				B715A40F20CE7E0C003018EF /* UIColor+Hex.m in Sources */,
 				B715A41A20CE7E0C003018EF /* NSString+CustomMethod.m in Sources */,
 				B715A41520CE7E0C003018EF /* UIButton+ImageAndText.m in Sources */,
-				B715A41B20CE7E0C003018EF /* NSBundle+AppLanguageSwitch.m in Sources */,
 				B715A3A720CE5799003018EF /* ViewController.m in Sources */,
 				B715A40E20CE7E0C003018EF /* UINavigationController+CustomStyle.m in Sources */,
 				B715A3B220CE579A003018EF /* main.m in Sources */,

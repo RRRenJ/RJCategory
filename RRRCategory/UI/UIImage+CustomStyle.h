@@ -33,7 +33,6 @@
 
 //给图片换颜色
 -(UIImage*)imageChangeColor:(UIColor*)color;
-
 /// 根据颜色返回一张对应的图片
 + (UIImage *)imageWithColor:(UIColor *)color;
 /// 返回一张可拉伸的图片

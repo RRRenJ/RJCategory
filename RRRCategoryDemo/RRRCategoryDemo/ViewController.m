@@ -15,6 +15,8 @@
 
 #import "UITableView+CustomStyle.h"
 
+#import "NSBundle+AppLanguageSwitch.h"
+
 @interface ViewController ()
 
 
@@ -35,6 +37,7 @@
     bt.frame = CGRectMake(100, 100,100, 50);
 //    [bt cutRoundWithRadius:30];
 //    [bt cutRoundWithRadius:40 byRoundingCorners:UIRectCornerAllCorners];
+    NSLog(@"%@",NSBundle.getCusLanguage);
 
     [self.view addSubview:bt];
     

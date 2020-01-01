@@ -267,8 +267,7 @@ static CGRect swapWidthAndHeight(CGRect rect){
     if (!URL) {
         return CGSizeZero;
     }
-    
-    
+
     CGImageSourceRef imageSourceRef = CGImageSourceCreateWithURL((CFURLRef)url, NULL);
     CGFloat width = 0, height = 0;
     if (imageSourceRef) {
